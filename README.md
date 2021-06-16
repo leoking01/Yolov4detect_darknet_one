@@ -26,5 +26,5 @@ make
     Author:Xi Yunlong, Shanghai JiaoTong University,China
     Email:XiYunlong111@outlook.com
     
-    
-    <img src="detect_result/supermarket_yolov4_out.jpg"   />
+
+    <img src="./detect_result/supermarket_yolov4_out.jpg"   />
