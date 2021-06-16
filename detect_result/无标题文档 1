@@ -1,0 +1,2249 @@
+23:02:41: Starting /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 ...
+23:02:41: /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 exited with code 0
+
+23:03:08: Starting /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 ...
+   layer   filters  size/strd(dil)      input                output
+   0 conv     32       3 x 3/ 1    576 x 576 x   3 ->  576 x 576 x  32 0.573 BF
+   1 conv     64       3 x 3/ 2    576 x 576 x  32 ->  288 x 288 x  64 3.058 BF
+   2 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   3 route  1 		                           ->  288 x 288 x  64 
+   4 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   5 conv     32       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  32 0.340 BF
+   6 conv     64       3 x 3/ 1    288 x 288 x  32 ->  288 x 288 x  64 3.058 BF
+   7 Shortcut Layer: 4,  wt = 0, wn = 0, outputs: 288 x 288 x  64 0.005 BF
+   8 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   9 route  8 2 	                           ->  288 x 288 x 128 
+  10 conv     64       1 x 1/ 1    288 x 288 x 128 ->  288 x 288 x  64 1.359 BF
+  11 conv    128       3 x 3/ 2    288 x 288 x  64 ->  144 x 144 x 128 3.058 BF
+  12 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  13 route  11 		                           ->  144 x 144 x 128 
+  14 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  15 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  16 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  17 Shortcut Layer: 14,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  18 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  19 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  20 Shortcut Layer: 17,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  21 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  22 route  21 12 	                           ->  144 x 144 x 128 
+  23 conv    128       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x 128 0.679 BF
+  24 conv    256       3 x 3/ 2    144 x 144 x 128 ->   72 x  72 x 256 3.058 BF
+  25 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  26 route  24 		                           ->   72 x  72 x 256 
+  27 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  28 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  29 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  30 Shortcut Layer: 27,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  31 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  32 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  33 Shortcut Layer: 30,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  34 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  35 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  36 Shortcut Layer: 33,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  37 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  38 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  39 Shortcut Layer: 36,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  40 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  41 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  42 Shortcut Layer: 39,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  43 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  44 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  45 Shortcut Layer: 42,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  46 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  47 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  48 Shortcut Layer: 45,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  49 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  50 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  51 Shortcut Layer: 48,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  52 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  53 route  52 25 	                           ->   72 x  72 x 256 
+  54 conv    256       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 256 0.679 BF
+  55 conv    512       3 x 3/ 2     72 x  72 x 256 ->   36 x  36 x 512 3.058 BF
+  56 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  57 route  55 		                           ->   36 x  36 x 512 
+  58 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  59 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  60 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  61 Shortcut Layer: 58,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  62 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  63 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  64 Shortcut Layer: 61,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  65 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  66 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  67 Shortcut Layer: 64,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  68 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  69 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  70 Shortcut Layer: 67,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  71 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  72 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  73 Shortcut Layer: 70,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  74 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  75 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  76 Shortcut Layer: 73,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  77 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  78 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  79 Shortcut Layer: 76,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  80 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  81 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  82 Shortcut Layer: 79,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  83 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  84 route  83 56 	                           ->   36 x  36 x 512 
+  85 conv    512       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 512 0.679 BF
+  86 conv   1024       3 x 3/ 2     36 x  36 x 512 ->   18 x  18 x1024 3.058 BF
+  87 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  88 route  86 		                           ->   18 x  18 x1024 
+  89 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  90 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  91 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  92 Shortcut Layer: 89,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  93 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  94 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  95 Shortcut Layer: 92,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  96 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  97 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  98 Shortcut Layer: 95,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  99 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 100 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+ 101 Shortcut Layer: 98,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+ 102 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 103 route  102 87 	                           ->   18 x  18 x1024 
+ 104 conv   1024       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x1024 0.679 BF
+ 105 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 106 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 107 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 108 max                5x 5/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.004 BF
+ 109 route  107 		                           ->   18 x  18 x 512 
+ 110 max                9x 9/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.013 BF
+ 111 route  107 		                           ->   18 x  18 x 512 
+ 112 max               13x13/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.028 BF
+ 113 route  112 110 108 107 	                   ->   18 x  18 x2048 
+ 114 conv    512       1 x 1/ 1     18 x  18 x2048 ->   18 x  18 x 512 0.679 BF
+ 115 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 116 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 117 conv    256       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 256 0.085 BF
+ 118 upsample                 2x    18 x  18 x 256 ->   36 x  36 x 256
+ 119 route  85 		                           ->   36 x  36 x 512 
+ 120 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 121 route  120 118 	                           ->   36 x  36 x 512 
+ 122 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 123 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 124 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 125 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 126 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 127 conv    128       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 128 0.085 BF
+ 128 upsample                 2x    36 x  36 x 128 ->   72 x  72 x 128
+ 129 route  54 		                           ->   72 x  72 x 256 
+ 130 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 131 route  130 128 	                           ->   72 x  72 x 256 
+ 132 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 133 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 134 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 135 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 136 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 137 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 138 conv    255       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 255 0.677 BF
+ 139 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.20
+ 140 route  136 		                           ->   72 x  72 x 128 
+ 141 conv    256       3 x 3/ 2     72 x  72 x 128 ->   36 x  36 x 256 0.764 BF
+ 142 route  141 126 	                           ->   36 x  36 x 512 
+ 143 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 144 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 145 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 146 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 147 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 148 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 149 conv    255       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 255 0.338 BF
+ 150 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.10
+ 151 route  147 		                           ->   36 x  36 x 256 
+ 152 conv    512       3 x 3/ 2     36 x  36 x 256 ->   18 x  18 x 512 0.764 BF
+ 153 route  152 116 	                           ->   18 x  18 x1024 
+ 154 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 155 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 156 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 157 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 158 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 159 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 160 conv    255       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 255 0.169 BF
+ 161 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.05
+Total BFLOPS 115.293 
+avg_outputs = 958892 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+Loading weights from ../mdel_cfg/yolov4.weights...Couldn't open file: ../mdel_cfg/yolov4.weights
+23:03:09: /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 exited with code 1
+
+23:05:12: Starting /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 ...
+   layer   filters  size/strd(dil)      input                output
+   0 conv     32       3 x 3/ 1    576 x 576 x   3 ->  576 x 576 x  32 0.573 BF
+   1 conv     64       3 x 3/ 2    576 x 576 x  32 ->  288 x 288 x  64 3.058 BF
+   2 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   3 route  1 		                           ->  288 x 288 x  64 
+   4 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   5 conv     32       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  32 0.340 BF
+   6 conv     64       3 x 3/ 1    288 x 288 x  32 ->  288 x 288 x  64 3.058 BF
+   7 Shortcut Layer: 4,  wt = 0, wn = 0, outputs: 288 x 288 x  64 0.005 BF
+   8 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   9 route  8 2 	                           ->  288 x 288 x 128 
+  10 conv     64       1 x 1/ 1    288 x 288 x 128 ->  288 x 288 x  64 1.359 BF
+  11 conv    128       3 x 3/ 2    288 x 288 x  64 ->  144 x 144 x 128 3.058 BF
+  12 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  13 route  11 		                           ->  144 x 144 x 128 
+  14 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  15 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  16 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  17 Shortcut Layer: 14,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  18 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  19 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  20 Shortcut Layer: 17,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  21 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  22 route  21 12 	                           ->  144 x 144 x 128 
+  23 conv    128       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x 128 0.679 BF
+  24 conv    256       3 x 3/ 2    144 x 144 x 128 ->   72 x  72 x 256 3.058 BF
+  25 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  26 route  24 		                           ->   72 x  72 x 256 
+  27 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  28 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  29 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  30 Shortcut Layer: 27,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  31 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  32 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  33 Shortcut Layer: 30,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  34 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  35 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  36 Shortcut Layer: 33,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  37 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  38 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  39 Shortcut Layer: 36,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  40 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  41 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  42 Shortcut Layer: 39,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  43 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  44 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  45 Shortcut Layer: 42,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  46 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  47 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  48 Shortcut Layer: 45,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  49 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  50 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  51 Shortcut Layer: 48,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  52 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  53 route  52 25 	                           ->   72 x  72 x 256 
+  54 conv    256       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 256 0.679 BF
+  55 conv    512       3 x 3/ 2     72 x  72 x 256 ->   36 x  36 x 512 3.058 BF
+  56 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  57 route  55 		                           ->   36 x  36 x 512 
+  58 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  59 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  60 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  61 Shortcut Layer: 58,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  62 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  63 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  64 Shortcut Layer: 61,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  65 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  66 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  67 Shortcut Layer: 64,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  68 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  69 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  70 Shortcut Layer: 67,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  71 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  72 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  73 Shortcut Layer: 70,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  74 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  75 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  76 Shortcut Layer: 73,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  77 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  78 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  79 Shortcut Layer: 76,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  80 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  81 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  82 Shortcut Layer: 79,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  83 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  84 route  83 56 	                           ->   36 x  36 x 512 
+  85 conv    512       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 512 0.679 BF
+  86 conv   1024       3 x 3/ 2     36 x  36 x 512 ->   18 x  18 x1024 3.058 BF
+  87 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  88 route  86 		                           ->   18 x  18 x1024 
+  89 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  90 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  91 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  92 Shortcut Layer: 89,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  93 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  94 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  95 Shortcut Layer: 92,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  96 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  97 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  98 Shortcut Layer: 95,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  99 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 100 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+ 101 Shortcut Layer: 98,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+ 102 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 103 route  102 87 	                           ->   18 x  18 x1024 
+ 104 conv   1024       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x1024 0.679 BF
+ 105 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 106 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 107 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 108 max                5x 5/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.004 BF
+ 109 route  107 		                           ->   18 x  18 x 512 
+ 110 max                9x 9/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.013 BF
+ 111 route  107 		                           ->   18 x  18 x 512 
+ 112 max               13x13/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.028 BF
+ 113 route  112 110 108 107 	                   ->   18 x  18 x2048 
+ 114 conv    512       1 x 1/ 1     18 x  18 x2048 ->   18 x  18 x 512 0.679 BF
+ 115 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 116 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 117 conv    256       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 256 0.085 BF
+ 118 upsample                 2x    18 x  18 x 256 ->   36 x  36 x 256
+ 119 route  85 		                           ->   36 x  36 x 512 
+ 120 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 121 route  120 118 	                           ->   36 x  36 x 512 
+ 122 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 123 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 124 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 125 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 126 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 127 conv    128       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 128 0.085 BF
+ 128 upsample                 2x    36 x  36 x 128 ->   72 x  72 x 128
+ 129 route  54 		                           ->   72 x  72 x 256 
+ 130 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 131 route  130 128 	                           ->   72 x  72 x 256 
+ 132 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 133 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 134 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 135 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 136 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 137 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 138 conv    255       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 255 0.677 BF
+ 139 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.20
+ 140 route  136 		                           ->   72 x  72 x 128 
+ 141 conv    256       3 x 3/ 2     72 x  72 x 128 ->   36 x  36 x 256 0.764 BF
+ 142 route  141 126 	                           ->   36 x  36 x 512 
+ 143 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 144 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 145 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 146 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 147 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 148 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 149 conv    255       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 255 0.338 BF
+ 150 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.10
+ 151 route  147 		                           ->   36 x  36 x 256 
+ 152 conv    512       3 x 3/ 2     36 x  36 x 256 ->   18 x  18 x 512 0.764 BF
+ 153 route  152 116 	                           ->   18 x  18 x1024 
+ 154 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 155 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 156 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 157 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 158 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 159 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 160 conv    255       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 255 0.169 BF
+ 161 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.05
+Total BFLOPS 115.293 
+avg_outputs = 958892 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+Loading weights from ../mdel_cfg/yolov4.weights...Done! Loaded 162 layers from weights-file 
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqeglfs.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqeglfs.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "eglfs"
+        ]
+    },
+    "archreq": 0,
+    "className": "QEglFSIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("eglfs")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqlinuxfb.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqlinuxfb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "linuxfb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QLinuxFbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("linuxfb")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimal.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimal"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("minimal")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimalegl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimalegl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimalegl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("minimalegl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqoffscreen.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqoffscreen.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "offscreen"
+        ]
+    },
+    "archreq": 0,
+    "className": "QOffscreenIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("offscreen")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqvnc.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqvnc.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "vnc"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVncIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("vnc")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-egl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-generic.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-generic.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-egl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-xcomposite-egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-glx.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-glx.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeGlxPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-xcomposite-glx")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwebgl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwebgl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "webgl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWebGLIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("webgl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "xcb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platforms" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so"
+loaded library "Xcursor"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "gtk3"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGtk3ThemePlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("gtk3")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqxdgdesktopportal.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqxdgdesktopportal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "xdgdesktopportal",
+            "flatpak",
+            "snap"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXdgDesktopPortalThemePlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xdgdesktopportal", "flatpak", "snap")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platformthemes" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "compose",
+            "xim"
+        ]
+    },
+    "archreq": 0,
+    "className": "QComposePlatformInputContextPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("compose", "xim")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "ibus"
+        ]
+    },
+    "archreq": 0,
+    "className": "QIbusPlatformInputContextPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("ibus")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "qtvirtualkeyboard"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVirtualKeyboardPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("qtvirtualkeyboard")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platforminputcontexts" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines/libqsvgicon.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines/libqsvgicon.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QIconEngineFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz",
+            "svg.gz"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgIconPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("svg", "svgz", "svg.gz")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/iconengines" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "gif"
+        ],
+        "MimeTypes": [
+            "image/gif"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGifPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("gif")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "icns"
+        ],
+        "MimeTypes": [
+            "image/x-icns"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICNSPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("icns")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "ico",
+            "cur"
+        ],
+        "MimeTypes": [
+            "image/vnd.microsoft.icon",
+            "image/vnd.microsoft.icon"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICOPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("ico", "cur")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "jpg",
+            "jpeg"
+        ],
+        "MimeTypes": [
+            "image/jpeg",
+            "image/jpeg"
+        ]
+    },
+    "archreq": 0,
+    "className": "QJpegPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("jpg", "jpeg")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz"
+        ],
+        "MimeTypes": [
+            "image/svg+xml",
+            "image/svg+xml-compressed"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("svg", "svgz")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tga"
+        ],
+        "MimeTypes": [
+            "image/x-tga"
+        ]
+    },
+    "archreq": 0,
+    "className": "QTgaPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("tga")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tiff",
+            "tif"
+        ],
+        "MimeTypes": [
+            "image/tiff",
+            "image/tiff"
+        ]
+    },
+    "archreq": 0,
+    "className": "QTiffPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("tiff", "tif")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "wbmp"
+        ],
+        "MimeTypes": [
+            "image/vnd.wap.wbmp"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWbmpPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wbmp")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "webp"
+        ],
+        "MimeTypes": [
+            "image/webp"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWebpPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("webp")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/imageformats" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-egl-integration.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-egl-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb_egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbGlxIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb_glx")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/xcbglintegrations" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/accessible" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/accessible" ...
+ seen 64, trained: 32032 K-images (500 Kilo-batches_64) 
+object names loaded 
+input image or video filename:  Time: 7.64833 sec 
+input image or video filename: 23:06:43: 程序异常结束。
+23:06:43: The process was ended forcefully.
+23:06:44: /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 crashed.
+
+23:06:51: Starting /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 ...
+   layer   filters  size/strd(dil)      input                output
+   0 conv     32       3 x 3/ 1    576 x 576 x   3 ->  576 x 576 x  32 0.573 BF
+   1 conv     64       3 x 3/ 2    576 x 576 x  32 ->  288 x 288 x  64 3.058 BF
+   2 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   3 route  1 		                           ->  288 x 288 x  64 
+   4 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   5 conv     32       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  32 0.340 BF
+   6 conv     64       3 x 3/ 1    288 x 288 x  32 ->  288 x 288 x  64 3.058 BF
+   7 Shortcut Layer: 4,  wt = 0, wn = 0, outputs: 288 x 288 x  64 0.005 BF
+   8 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   9 route  8 2 	                           ->  288 x 288 x 128 
+  10 conv     64       1 x 1/ 1    288 x 288 x 128 ->  288 x 288 x  64 1.359 BF
+  11 conv    128       3 x 3/ 2    288 x 288 x  64 ->  144 x 144 x 128 3.058 BF
+  12 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  13 route  11 		                           ->  144 x 144 x 128 
+  14 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  15 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  16 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  17 Shortcut Layer: 14,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  18 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  19 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  20 Shortcut Layer: 17,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  21 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  22 route  21 12 	                           ->  144 x 144 x 128 
+  23 conv    128       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x 128 0.679 BF
+  24 conv    256       3 x 3/ 2    144 x 144 x 128 ->   72 x  72 x 256 3.058 BF
+  25 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  26 route  24 		                           ->   72 x  72 x 256 
+  27 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  28 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  29 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  30 Shortcut Layer: 27,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  31 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  32 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  33 Shortcut Layer: 30,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  34 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  35 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  36 Shortcut Layer: 33,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  37 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  38 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  39 Shortcut Layer: 36,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  40 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  41 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  42 Shortcut Layer: 39,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  43 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  44 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  45 Shortcut Layer: 42,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  46 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  47 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  48 Shortcut Layer: 45,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  49 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  50 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  51 Shortcut Layer: 48,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  52 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  53 route  52 25 	                           ->   72 x  72 x 256 
+  54 conv    256       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 256 0.679 BF
+  55 conv    512       3 x 3/ 2     72 x  72 x 256 ->   36 x  36 x 512 3.058 BF
+  56 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  57 route  55 		                           ->   36 x  36 x 512 
+  58 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  59 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  60 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  61 Shortcut Layer: 58,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  62 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  63 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  64 Shortcut Layer: 61,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  65 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  66 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  67 Shortcut Layer: 64,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  68 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  69 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  70 Shortcut Layer: 67,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  71 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  72 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  73 Shortcut Layer: 70,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  74 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  75 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  76 Shortcut Layer: 73,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  77 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  78 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  79 Shortcut Layer: 76,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  80 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  81 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  82 Shortcut Layer: 79,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  83 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  84 route  83 56 	                           ->   36 x  36 x 512 
+  85 conv    512       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 512 0.679 BF
+  86 conv   1024       3 x 3/ 2     36 x  36 x 512 ->   18 x  18 x1024 3.058 BF
+  87 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  88 route  86 		                           ->   18 x  18 x1024 
+  89 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  90 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  91 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  92 Shortcut Layer: 89,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  93 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  94 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  95 Shortcut Layer: 92,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  96 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  97 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  98 Shortcut Layer: 95,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  99 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 100 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+ 101 Shortcut Layer: 98,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+ 102 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 103 route  102 87 	                           ->   18 x  18 x1024 
+ 104 conv   1024       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x1024 0.679 BF
+ 105 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 106 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 107 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 108 max                5x 5/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.004 BF
+ 109 route  107 		                           ->   18 x  18 x 512 
+ 110 max                9x 9/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.013 BF
+ 111 route  107 		                           ->   18 x  18 x 512 
+ 112 max               13x13/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.028 BF
+ 113 route  112 110 108 107 	                   ->   18 x  18 x2048 
+ 114 conv    512       1 x 1/ 1     18 x  18 x2048 ->   18 x  18 x 512 0.679 BF
+ 115 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 116 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 117 conv    256       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 256 0.085 BF
+ 118 upsample                 2x    18 x  18 x 256 ->   36 x  36 x 256
+ 119 route  85 		                           ->   36 x  36 x 512 
+ 120 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 121 route  120 118 	                           ->   36 x  36 x 512 
+ 122 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 123 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 124 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 125 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 126 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 127 conv    128       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 128 0.085 BF
+ 128 upsample                 2x    36 x  36 x 128 ->   72 x  72 x 128
+ 129 route  54 		                           ->   72 x  72 x 256 
+ 130 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 131 route  130 128 	                           ->   72 x  72 x 256 
+ 132 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 133 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 134 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 135 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 136 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 137 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 138 conv    255       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 255 0.677 BF
+ 139 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.20
+ 140 route  136 		                           ->   72 x  72 x 128 
+ 141 conv    256       3 x 3/ 2     72 x  72 x 128 ->   36 x  36 x 256 0.764 BF
+ 142 route  141 126 	                           ->   36 x  36 x 512 
+ 143 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 144 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 145 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 146 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 147 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 148 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 149 conv    255       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 255 0.338 BF
+ 150 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.10
+ 151 route  147 		                           ->   36 x  36 x 256 
+ 152 conv    512       3 x 3/ 2     36 x  36 x 256 ->   18 x  18 x 512 0.764 BF
+ 153 route  152 116 	                           ->   18 x  18 x1024 
+ 154 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 155 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 156 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 157 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 158 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 159 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 160 conv    255       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 255 0.169 BF
+ 161 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.05
+Total BFLOPS 115.293 
+avg_outputs = 958892 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+Loading weights from ../mdel_cfg/yolov4.weights...Done! Loaded 162 layers from weights-file 
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqeglfs.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqeglfs.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "eglfs"
+        ]
+    },
+    "archreq": 0,
+    "className": "QEglFSIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("eglfs")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqlinuxfb.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqlinuxfb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "linuxfb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QLinuxFbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("linuxfb")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimal.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimal"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("minimal")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimalegl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimalegl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimalegl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("minimalegl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqoffscreen.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqoffscreen.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "offscreen"
+        ]
+    },
+    "archreq": 0,
+    "className": "QOffscreenIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("offscreen")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqvnc.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqvnc.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "vnc"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVncIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("vnc")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-egl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-generic.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-generic.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-egl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-xcomposite-egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-glx.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-glx.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeGlxPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-xcomposite-glx")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwebgl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwebgl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "webgl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWebGLIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("webgl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "xcb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platforms" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so"
+loaded library "Xcursor"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "gtk3"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGtk3ThemePlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("gtk3")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqxdgdesktopportal.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqxdgdesktopportal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "xdgdesktopportal",
+            "flatpak",
+            "snap"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXdgDesktopPortalThemePlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xdgdesktopportal", "flatpak", "snap")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platformthemes" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "compose",
+            "xim"
+        ]
+    },
+    "archreq": 0,
+    "className": "QComposePlatformInputContextPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("compose", "xim")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "ibus"
+        ]
+    },
+    "archreq": 0,
+    "className": "QIbusPlatformInputContextPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("ibus")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "qtvirtualkeyboard"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVirtualKeyboardPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("qtvirtualkeyboard")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platforminputcontexts" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines/libqsvgicon.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines/libqsvgicon.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QIconEngineFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz",
+            "svg.gz"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgIconPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("svg", "svgz", "svg.gz")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/iconengines" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "gif"
+        ],
+        "MimeTypes": [
+            "image/gif"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGifPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("gif")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "icns"
+        ],
+        "MimeTypes": [
+            "image/x-icns"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICNSPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("icns")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "ico",
+            "cur"
+        ],
+        "MimeTypes": [
+            "image/vnd.microsoft.icon",
+            "image/vnd.microsoft.icon"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICOPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("ico", "cur")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "jpg",
+            "jpeg"
+        ],
+        "MimeTypes": [
+            "image/jpeg",
+            "image/jpeg"
+        ]
+    },
+    "archreq": 0,
+    "className": "QJpegPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("jpg", "jpeg")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz"
+        ],
+        "MimeTypes": [
+            "image/svg+xml",
+            "image/svg+xml-compressed"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("svg", "svgz")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tga"
+        ],
+        "MimeTypes": [
+            "image/x-tga"
+        ]
+    },
+    "archreq": 0,
+    "className": "QTgaPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("tga")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tiff",
+            "tif"
+        ],
+        "MimeTypes": [
+            "image/tiff",
+            "image/tiff"
+        ]
+    },
+    "archreq": 0,
+    "className": "QTiffPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("tiff", "tif")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "wbmp"
+        ],
+        "MimeTypes": [
+            "image/vnd.wap.wbmp"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWbmpPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wbmp")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "webp"
+        ],
+        "MimeTypes": [
+            "image/webp"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWebpPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("webp")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/imageformats" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-egl-integration.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-egl-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb_egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbGlxIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb_glx")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/xcbglintegrations" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/accessible" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/accessible" ...
+ seen 64, trained: 32032 K-images (500 Kilo-batches_64) 
+object names loaded 
+input image or video filename:  Time: 7.72718 sec 
+input image or video filename: 23:08:36: 程序异常结束。
+23:08:36: The process was ended forcefully.
+23:08:36: /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 crashed.
+
+23:08:42: Starting /home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/yolov4 ...
+   layer   filters  size/strd(dil)      input                output
+   0 conv     32       3 x 3/ 1    576 x 576 x   3 ->  576 x 576 x  32 0.573 BF
+   1 conv     64       3 x 3/ 2    576 x 576 x  32 ->  288 x 288 x  64 3.058 BF
+   2 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   3 route  1 		                           ->  288 x 288 x  64 
+   4 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   5 conv     32       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  32 0.340 BF
+   6 conv     64       3 x 3/ 1    288 x 288 x  32 ->  288 x 288 x  64 3.058 BF
+   7 Shortcut Layer: 4,  wt = 0, wn = 0, outputs: 288 x 288 x  64 0.005 BF
+   8 conv     64       1 x 1/ 1    288 x 288 x  64 ->  288 x 288 x  64 0.679 BF
+   9 route  8 2 	                           ->  288 x 288 x 128 
+  10 conv     64       1 x 1/ 1    288 x 288 x 128 ->  288 x 288 x  64 1.359 BF
+  11 conv    128       3 x 3/ 2    288 x 288 x  64 ->  144 x 144 x 128 3.058 BF
+  12 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  13 route  11 		                           ->  144 x 144 x 128 
+  14 conv     64       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x  64 0.340 BF
+  15 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  16 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  17 Shortcut Layer: 14,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  18 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  19 conv     64       3 x 3/ 1    144 x 144 x  64 ->  144 x 144 x  64 1.529 BF
+  20 Shortcut Layer: 17,  wt = 0, wn = 0, outputs: 144 x 144 x  64 0.001 BF
+  21 conv     64       1 x 1/ 1    144 x 144 x  64 ->  144 x 144 x  64 0.170 BF
+  22 route  21 12 	                           ->  144 x 144 x 128 
+  23 conv    128       1 x 1/ 1    144 x 144 x 128 ->  144 x 144 x 128 0.679 BF
+  24 conv    256       3 x 3/ 2    144 x 144 x 128 ->   72 x  72 x 256 3.058 BF
+  25 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  26 route  24 		                           ->   72 x  72 x 256 
+  27 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+  28 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  29 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  30 Shortcut Layer: 27,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  31 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  32 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  33 Shortcut Layer: 30,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  34 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  35 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  36 Shortcut Layer: 33,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  37 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  38 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  39 Shortcut Layer: 36,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  40 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  41 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  42 Shortcut Layer: 39,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  43 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  44 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  45 Shortcut Layer: 42,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  46 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  47 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  48 Shortcut Layer: 45,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  49 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  50 conv    128       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 128 1.529 BF
+  51 Shortcut Layer: 48,  wt = 0, wn = 0, outputs:  72 x  72 x 128 0.001 BF
+  52 conv    128       1 x 1/ 1     72 x  72 x 128 ->   72 x  72 x 128 0.170 BF
+  53 route  52 25 	                           ->   72 x  72 x 256 
+  54 conv    256       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 256 0.679 BF
+  55 conv    512       3 x 3/ 2     72 x  72 x 256 ->   36 x  36 x 512 3.058 BF
+  56 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  57 route  55 		                           ->   36 x  36 x 512 
+  58 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+  59 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  60 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  61 Shortcut Layer: 58,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  62 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  63 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  64 Shortcut Layer: 61,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  65 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  66 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  67 Shortcut Layer: 64,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  68 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  69 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  70 Shortcut Layer: 67,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  71 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  72 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  73 Shortcut Layer: 70,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  74 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  75 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  76 Shortcut Layer: 73,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  77 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  78 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  79 Shortcut Layer: 76,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  80 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  81 conv    256       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 256 1.529 BF
+  82 Shortcut Layer: 79,  wt = 0, wn = 0, outputs:  36 x  36 x 256 0.000 BF
+  83 conv    256       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 256 0.170 BF
+  84 route  83 56 	                           ->   36 x  36 x 512 
+  85 conv    512       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 512 0.679 BF
+  86 conv   1024       3 x 3/ 2     36 x  36 x 512 ->   18 x  18 x1024 3.058 BF
+  87 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  88 route  86 		                           ->   18 x  18 x1024 
+  89 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+  90 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  91 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  92 Shortcut Layer: 89,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  93 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  94 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  95 Shortcut Layer: 92,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  96 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+  97 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+  98 Shortcut Layer: 95,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+  99 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 100 conv    512       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x 512 1.529 BF
+ 101 Shortcut Layer: 98,  wt = 0, wn = 0, outputs:  18 x  18 x 512 0.000 BF
+ 102 conv    512       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.170 BF
+ 103 route  102 87 	                           ->   18 x  18 x1024 
+ 104 conv   1024       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x1024 0.679 BF
+ 105 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 106 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 107 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 108 max                5x 5/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.004 BF
+ 109 route  107 		                           ->   18 x  18 x 512 
+ 110 max                9x 9/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.013 BF
+ 111 route  107 		                           ->   18 x  18 x 512 
+ 112 max               13x13/ 1     18 x  18 x 512 ->   18 x  18 x 512 0.028 BF
+ 113 route  112 110 108 107 	                   ->   18 x  18 x2048 
+ 114 conv    512       1 x 1/ 1     18 x  18 x2048 ->   18 x  18 x 512 0.679 BF
+ 115 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 116 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 117 conv    256       1 x 1/ 1     18 x  18 x 512 ->   18 x  18 x 256 0.085 BF
+ 118 upsample                 2x    18 x  18 x 256 ->   36 x  36 x 256
+ 119 route  85 		                           ->   36 x  36 x 512 
+ 120 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 121 route  120 118 	                           ->   36 x  36 x 512 
+ 122 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 123 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 124 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 125 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 126 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 127 conv    128       1 x 1/ 1     36 x  36 x 256 ->   36 x  36 x 128 0.085 BF
+ 128 upsample                 2x    36 x  36 x 128 ->   72 x  72 x 128
+ 129 route  54 		                           ->   72 x  72 x 256 
+ 130 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 131 route  130 128 	                           ->   72 x  72 x 256 
+ 132 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 133 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 134 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 135 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 136 conv    128       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 128 0.340 BF
+ 137 conv    256       3 x 3/ 1     72 x  72 x 128 ->   72 x  72 x 256 3.058 BF
+ 138 conv    255       1 x 1/ 1     72 x  72 x 256 ->   72 x  72 x 255 0.677 BF
+ 139 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.20
+ 140 route  136 		                           ->   72 x  72 x 128 
+ 141 conv    256       3 x 3/ 2     72 x  72 x 128 ->   36 x  36 x 256 0.764 BF
+ 142 route  141 126 	                           ->   36 x  36 x 512 
+ 143 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 144 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 145 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 146 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 147 conv    256       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 256 0.340 BF
+ 148 conv    512       3 x 3/ 1     36 x  36 x 256 ->   36 x  36 x 512 3.058 BF
+ 149 conv    255       1 x 1/ 1     36 x  36 x 512 ->   36 x  36 x 255 0.338 BF
+ 150 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.10
+ 151 route  147 		                           ->   36 x  36 x 256 
+ 152 conv    512       3 x 3/ 2     36 x  36 x 256 ->   18 x  18 x 512 0.764 BF
+ 153 route  152 116 	                           ->   18 x  18 x1024 
+ 154 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 155 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 156 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 157 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 158 conv    512       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 512 0.340 BF
+ 159 conv   1024       3 x 3/ 1     18 x  18 x 512 ->   18 x  18 x1024 3.058 BF
+ 160 conv    255       1 x 1/ 1     18 x  18 x1024 ->   18 x  18 x 255 0.169 BF
+ 161 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, cls_norm: 1.00, scale_x_y: 1.05
+Total BFLOPS 115.293 
+avg_outputs = 958892 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+Loading weights from ../mdel_cfg/yolov4.weights...Done! Loaded 162 layers from weights-file 
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqeglfs.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqeglfs.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "eglfs"
+        ]
+    },
+    "archreq": 0,
+    "className": "QEglFSIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("eglfs")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqlinuxfb.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqlinuxfb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "linuxfb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QLinuxFbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("linuxfb")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimal.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimal"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("minimal")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimalegl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqminimalegl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimalegl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("minimalegl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqoffscreen.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqoffscreen.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "offscreen"
+        ]
+    },
+    "archreq": 0,
+    "className": "QOffscreenIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("offscreen")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqvnc.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqvnc.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "vnc"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVncIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("vnc")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-egl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-generic.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-generic.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-egl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-xcomposite-egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-glx.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwayland-xcomposite-glx.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeGlxPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wayland-xcomposite-glx")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwebgl.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqwebgl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "webgl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWebGLIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("webgl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "xcb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platforms" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforms/libqxcb.so"
+loaded library "Xcursor"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "gtk3"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGtk3ThemePlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("gtk3")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqxdgdesktopportal.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqxdgdesktopportal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "xdgdesktopportal",
+            "flatpak",
+            "snap"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXdgDesktopPortalThemePlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xdgdesktopportal", "flatpak", "snap")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platformthemes" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platformthemes/libqgtk3.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "compose",
+            "xim"
+        ]
+    },
+    "archreq": 0,
+    "className": "QComposePlatformInputContextPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("compose", "xim")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "ibus"
+        ]
+    },
+    "archreq": 0,
+    "className": "QIbusPlatformInputContextPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("ibus")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "qtvirtualkeyboard"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVirtualKeyboardPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("qtvirtualkeyboard")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/platforminputcontexts" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines/libqsvgicon.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/iconengines/libqsvgicon.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QIconEngineFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz",
+            "svg.gz"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgIconPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("svg", "svgz", "svg.gz")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/iconengines" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "gif"
+        ],
+        "MimeTypes": [
+            "image/gif"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGifPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("gif")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "icns"
+        ],
+        "MimeTypes": [
+            "image/x-icns"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICNSPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("icns")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "ico",
+            "cur"
+        ],
+        "MimeTypes": [
+            "image/vnd.microsoft.icon",
+            "image/vnd.microsoft.icon"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICOPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("ico", "cur")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "jpg",
+            "jpeg"
+        ],
+        "MimeTypes": [
+            "image/jpeg",
+            "image/jpeg"
+        ]
+    },
+    "archreq": 0,
+    "className": "QJpegPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("jpg", "jpeg")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz"
+        ],
+        "MimeTypes": [
+            "image/svg+xml",
+            "image/svg+xml-compressed"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("svg", "svgz")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tga"
+        ],
+        "MimeTypes": [
+            "image/x-tga"
+        ]
+    },
+    "archreq": 0,
+    "className": "QTgaPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("tga")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tiff",
+            "tif"
+        ],
+        "MimeTypes": [
+            "image/tiff",
+            "image/tiff"
+        ]
+    },
+    "archreq": 0,
+    "className": "QTiffPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("tiff", "tif")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "wbmp"
+        ],
+        "MimeTypes": [
+            "image/vnd.wap.wbmp"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWbmpPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("wbmp")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "webp"
+        ],
+        "MimeTypes": [
+            "image/webp"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWebpPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("webp")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/imageformats" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqgif.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqicns.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqico.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqjpeg.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqsvg.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtga.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqtiff.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwbmp.so"
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/imageformats/libqwebp.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations" ...
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-egl-integration.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-egl-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbEglIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb_egl")
+QFactoryLoader::QFactoryLoader() looking at "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+Found metadata in lib /home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbGlxIntegrationPlugin",
+    "debug": false,
+    "version": 330752
+}
+Got keys from plugin meta data ("xcb_glx")
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/xcbglintegrations" ...
+loaded library "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/Qt5.12.10/5.12.10/gcc_64/plugins/accessible" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/home/alex/616/yoloV4/Yolov4detect_darknet_one/Yolov4detect/bin/accessible" ...
+ seen 64, trained: 32032 K-images (500 Kilo-batches_64) 
+object names loaded 
+input image or video filename:  Time: 7.87211 sec 
+broccoli - obj_id = 50,  x = 246, y = 244, w = 35, h = 22, prob = 0.307
+broccoli - obj_id = 50,  x = 0, y = 304, w = 75, h = 48, prob = 0.272
+broccoli - obj_id = 50,  x = 90, y = 281, w = 30, h = 25, prob = 0.21
+person - obj_id = 0,  x = 218, y = 143, w = 80, h = 97, prob = 0.993
+person - obj_id = 0,  x = 180, y = 128, w = 54, h = 103, prob = 0.993
+person - obj_id = 0,  x = 88, y = 154, w = 68, h = 83, prob = 0.976
+person - obj_id = 0,  x = 46, y = 154, w = 40, h = 64, prob = 0.873
+person - obj_id = 0,  x = 304, y = 153, w = 28, h = 56, prob = 0.858
+person - obj_id = 0,  x = 361, y = 128, w = 88, h = 126, prob = 0.829
+person - obj_id = 0,  x = 401, y = 136, w = 81, h = 125, prob = 0.745
+person - obj_id = 0,  x = 553, y = 154, w = 45, h = 74, prob = 0.592
+person - obj_id = 0,  x = 468, y = 131, w = 91, h = 128, prob = 0.237
+input image or video filename: 
